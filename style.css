@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.branding {
+    background: #440513;
+}
+
+.logo {
+    width: 120px;
+    float: left;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.branding::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.branding .title {
+    float: left;
+    width: 90%;
+}
+.branding .title h1 {
+    text-align: center;
+    margin: 45px 0;
+    color: #fff;
+}
+
+.nav {
+    background: #c12a4d;
+}
+ul {
+    margin: 5;
+    padding: 5;
+}
+.nav li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav ul ul li {
+    display: block;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+}
+.nav li:hover > ul {
+    display: block;
+    padding: 0;
+}
+
+.nav > ul > li {
+    padding: 5px 0;
+} 
+
+.nav > ul {
+    text-align: center;
+}
+
+.nav ul a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 30px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    display: block;
+}
+
+.nav ul ul a {
+    background: #0217FE;
+    white-space: nowrap;
+}
+
+.nav ul ul li:hover ul {
+    left: 100%;
+    top: 0;
+}
+
+.nav ul ul li:hover a,
+.nav ul ul li:hover li:hover a {
+    background: #42725A;
+}
+
+/*custom css for sidebar-left img*/
+.sidebar-left img {
+    margin-bottom: 30px;
+}
+
+.sidebar-nav li:hover a {
+    background: #3B3B39;
+    color: #fff;
+}
+
+.nav ul ul li:hover li a {
+    background: red;
+}
+
+.main {
+    display: flex;
+    column-gap: 30px;
+    background: #44a0ce;
+    padding: 30px 30px 30px 0;
+}
+
+.main .main-content {
+    width: 75%;
+}
+
+.main .sidebar-left, .main .sidebar-right {
+    width: 25%;
+    position: relative;
+}
+
+
+.main .sidebar-left .wrapper {
+    position: fixed;
+    width: 250px;
+}
+
+.sidebar-right img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main-content .section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin: 0;
+    background: #404bc7;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.footer {
+    background: #404bc7;
+    padding: 20px 0;
+}
+
+.footer .copy {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+}
